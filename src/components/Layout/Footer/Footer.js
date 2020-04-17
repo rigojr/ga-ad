@@ -7,7 +7,7 @@ const Footer = () => (
     <footer className={styles.footer}>
         <div>
             <p className={styles.pFooter}>Sistema Gestión de Actas de Activación/Desactivación, por José Salas</p>
-            <img src={ucabLogo} alt="UCAB Logo" className={styles.imgUcab}/>
+            <img src={ucabLogo} alt="UCAB Logo" className={styles.LogoDaycohost}/>
         </div>
     </footer>
 );
