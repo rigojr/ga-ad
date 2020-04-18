@@ -9,7 +9,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 import styles from './Header.module.css'
 import daycohostLogo from '../../../assets/img/daycohost-venezuela.png';
 
-const header = ( ) => (
+const header = ( props ) => (
 
     <header>
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
@@ -20,8 +20,22 @@ const header = ( ) => (
             </Navbar.Brand>
             <Nav className="ml-auto">
                 <DropdownButton id="dropdown-item-button" title="Bienvenido, Yudana" drop="left">
-                    <Dropdown.Item as="button">Editar</Dropdown.Item>
-                    <Dropdown.Item as="button">Cerrar Sesión</Dropdown.Item>
+                    <Dropdown.Item as="button">
+                        <Link 
+                            to="/login" 
+                            onClick={props.authHandler} 
+                            className={styles.NavLink}>
+                                Editar
+                        </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item as="button">
+                        <Link 
+                            to="/login" 
+                            onClick={props.authHandler} 
+                            className={styles.NavLink}>
+                                Cerrar Sesión
+                        </Link>
+                    </Dropdown.Item>
                 </DropdownButton>
             </Nav>
         </Navbar>

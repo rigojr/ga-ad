@@ -5,10 +5,9 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer'
 
 const Layout = (props) => (
-     //let HeaderComponent = this.props.isAuthed ? <Header/> : null;
-    //let HeaderComponent = <Header/>;            
+         
     <Aux>
-        <Header/>
+        {props.isAuthed ? <Header authHandler={props.authHandler} /> : null}
         <div>
             { props.children }
         </div>

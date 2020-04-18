@@ -18,6 +18,10 @@
     text-decoration: none;
 }
 
+.NavLink:active{
+    color: #fff;
+}
+
 .LogoDaycohost{
     width: 60px;
 }
