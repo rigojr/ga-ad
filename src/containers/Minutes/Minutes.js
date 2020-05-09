@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Table from 'react-bootstrap/Table'
 
-import styles from './Dashboard.module.css' 
+import styles from './Minutes.module.css' 
 import Aux from '../../hoc/Aux';
 import Subheader from '../../components/Layout/Subheader/Subheader';
 
@@ -45,7 +45,7 @@ class Dashboard extends Component {
                 </Container>
             </Card> 
             : 
-            <Redirect from="/Dashboard" to="/login"/>;
+            <Redirect from="/minute" to="/login"/>;
 
         return (
             <Aux>

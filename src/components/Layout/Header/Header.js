@@ -22,10 +22,10 @@ const header = ( props ) => (
                 <DropdownButton id="dropdown-item-button" title="Bienvenido, Yudana" drop="left">
                     <Dropdown.Item as="button">
                         <Link 
-                            to="/login" 
+                            to="/profile" 
                             onClick={props.authHandler} 
                             className={styles.NavLink}>
-                                Editar
+                                Perfil
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item as="button">

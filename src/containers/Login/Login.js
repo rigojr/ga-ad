@@ -18,7 +18,7 @@ class Login extends Component {
     authLogicRedirection = () =>{
         console.log("authLogicRedirection");
         this.props.authHandler();
-        this.props.history.push( '/dashboard/' );
+        this.props.history.push( '/minutes/' );
     }
 
     render(){

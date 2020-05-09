@@ -6,7 +6,7 @@ import ucabLogo from '../../../assets/img/daycohost-venezuela.png';
 const Footer = () => (
     <footer className={styles.footer}>
         <div>
-            <p className={styles.pFooter}>Sistema Gestión de Actas de Activación/Desactivación, por José Salas</p>
+            <p className={styles.pFooter}>Sistema Gestión de Actas de Activación/Desactivación, por José Salas - V 1.0 -</p>
             <img src={ucabLogo} alt="UCAB Logo" className={styles.LogoDaycohost}/>
         </div>
     </footer>
