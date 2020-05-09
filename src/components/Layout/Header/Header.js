@@ -23,7 +23,6 @@ const header = ( props ) => (
                     <Dropdown.Item as="button">
                         <Link 
                             to="/profile" 
-                            onClick={props.authHandler} 
                             className={styles.NavLink}>
                                 Perfil
                         </Link>
