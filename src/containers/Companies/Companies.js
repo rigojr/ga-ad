@@ -21,7 +21,7 @@ class Compines extends Component {
             searchPlaceholder: "Razón Social",
             elementPage: "Compañía",
             theaderTable: ["Rif" ,"Razón Social","Correo Electrónico","Teléfono", "Representate",""],
-            disableAction: true,
+            disableAction: false,
             showModal: false,
             createBoolean: false
          };
@@ -52,7 +52,7 @@ class Compines extends Component {
                 consultHandler={null}
                 disableHandler={null}
                 updateHandler={null}/>:
-        <Redirect from="/profile" to="/login"/>;
+        <Redirect from="/companies" to="/login"/>;
 
         return (
             <Aux>

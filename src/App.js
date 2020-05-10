@@ -6,7 +6,7 @@ import Login from './containers/Login/Login';
 import Minutes from './containers/Minutes/Minutes';
 import Profile from './containers/Profile/Profile';
 import Users from './containers/Users/Users';
-import Companies from './containers/Companies/Compines';
+import Companies from './containers/Companies/Companies';
 
 class App extends Component {
 
