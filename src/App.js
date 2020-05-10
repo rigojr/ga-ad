@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout';
 import Login from './containers/Login/Login';
 import Minutes from './containers/Minutes/Minutes';
 import Profile from './containers/Profile/Profile';
+import Users from './containers/Users/Users';
 
 class App extends Component {
 
@@ -33,9 +34,12 @@ class App extends Component {
                 <Route 
                   path="/minutes"
                   render={ (props) => <Minutes {...props} isAuthed={this.state.authenticated}/> } />
-                  <Route 
+                <Route 
                   path="/profile"
                   render={ (props) => <Profile {...props} isAuthed={this.state.authenticated}/> } />
+                <Route 
+                  path="/users"
+                  render={ (props) => <Users {...props} isAuthed={this.state.authenticated}/> } />
                 <Redirect from="/" to="/login"/>
               </Switch>
             </Layout>

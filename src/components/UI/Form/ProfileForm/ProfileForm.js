@@ -33,16 +33,20 @@ const ProfileForm = ( props ) => (
                         type="password" />
             </Form.Group>
         </Row>
-        <Row>
-            <Form.Group as={Col}>
-                <Button 
-                    variant="secondary" 
-                    onClick={props.passwordHandler}
-                    className={`${styles.ButtonProfileForm}`}>
-                    Modificar Contraseña
-                </Button>
-            </Form.Group>
-        </Row>
+        {
+            props.createForm ?
+            <Row>
+                <Form.Group as={Col}>
+                    <Button 
+                        variant="secondary" 
+                        onClick={props.passwordHandler}
+                        className={`${styles.ButtonProfileForm}`}>
+                        Modificar Contraseña
+                    </Button>
+                </Form.Group>
+            </Row>:
+            null
+        }
         <Row>
             <Form.Group as={Col}>
                 <Form.Label>Teléfono</Form.Label>
@@ -55,15 +59,20 @@ const ProfileForm = ( props ) => (
                     id="custom-file"/>
             </Form.Group>
         </Row>
-        <Row>
-            <Form.Group as={Col}>
-                <Button 
-                    variant="primary" 
-                    onClick={props.saveInformationHandler}>
-                    Guardar Infomración
-                </Button>
-            </Form.Group>
-        </Row>
+        {
+            props.createForm ?
+                <Row>
+                    <Form.Group as={Col}>
+                        <Button 
+                            variant="primary" 
+                            onClick={props.saveInformationHandler}>
+                            Guardar Infomración
+                        </Button>
+                    </Form.Group>
+                </Row> :
+                null
+        }
+        
     </Form>
 );
 

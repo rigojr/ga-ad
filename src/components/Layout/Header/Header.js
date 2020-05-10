@@ -22,6 +22,20 @@ const header = ( props ) => (
                 <DropdownButton id="dropdown-item-button" title="Bienvenido, Yudana" drop="left">
                     <Dropdown.Item as="button">
                         <Link 
+                            to="/minutes" 
+                            className={styles.NavLink}>
+                                Actas
+                        </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item as="button">
+                        <Link 
+                            to="/users" 
+                            className={styles.NavLink}>
+                                Usuarios
+                        </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item as="button">
+                        <Link 
                             to="/profile" 
                             className={styles.NavLink}>
                                 Perfil

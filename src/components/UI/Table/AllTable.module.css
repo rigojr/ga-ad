@@ -1,0 +1,36 @@
+
+
+.Table{
+    text-align: center;
+}
+
+.Thead{
+    width: 100%;
+    display: table;
+    table-layout:fixed;
+    width: calc( 100% - 1em );
+}
+
+.Tbody{
+    max-height: 400px;
+    display: block;
+    overflow-y: scroll;
+}
+
+.Tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.AccionIcons, .AccionIcons > *{
+    margin: 0px 5px;
+}
+
+.AccionIcon{
+    transition: all 0.5s ease-out;
+}
+
+.AccionIcon:hover{
+    color: rgba(0,0,0,.7);
+}

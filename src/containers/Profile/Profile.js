@@ -21,7 +21,8 @@ class Profile extends Component {
             <ProfileCard>
                 <ProfileForm
                     passwordHandler={this.passwordOnChangeHanlder}
-                    saveInformationHandler={this.userInformationOnChangeHandler}/>
+                    saveInformationHandler={this.userInformationOnChangeHandler}
+                    createForm={true}/>
             </ProfileCard> :
         <Redirect from="/profile" to="/login"/>;
         

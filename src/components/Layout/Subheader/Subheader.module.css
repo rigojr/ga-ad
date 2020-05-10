@@ -9,8 +9,17 @@
 
 .TitileSubHeader{
     font-size: 1.5rem;
+    color: #434099;
 }
 
 .Width100{
     width: 100% !important;
+}
+
+.SomePadding, .SomePadding > *{
+    margin-left: 5px;
+}
+
+.InputRigth{
+    float: right;
 }
