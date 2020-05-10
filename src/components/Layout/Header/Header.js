@@ -43,6 +43,13 @@ const header = ( props ) => (
                     </Dropdown.Item>
                     <Dropdown.Item as="button">
                         <Link 
+                            to="/templates" 
+                            className={styles.NavLink}>
+                                Planitllas
+                        </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item as="button">
+                        <Link 
                             to="/profile" 
                             className={styles.NavLink}>
                                 Perfil
