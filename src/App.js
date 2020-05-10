@@ -6,6 +6,7 @@ import Login from './containers/Login/Login';
 import Minutes from './containers/Minutes/Minutes';
 import Profile from './containers/Profile/Profile';
 import Users from './containers/Users/Users';
+import Companies from './containers/Companies/Compines';
 
 class App extends Component {
 
@@ -40,6 +41,9 @@ class App extends Component {
                 <Route 
                   path="/users"
                   render={ (props) => <Users {...props} isAuthed={this.state.authenticated}/> } />
+                <Route 
+                  path="/companies"
+                  render={ (props) => <Companies {...props} isAuthed={this.state.authenticated}/> } />
                 <Redirect from="/" to="/login"/>
               </Switch>
             </Layout>
